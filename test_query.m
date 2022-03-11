@@ -6,11 +6,13 @@ dbfile = 'example_wt_data.db';
 
 rs_file = 'run_sched.csv';
 tp_file = 'test_points.csv';
+% The insert operation via sqlite3 MEX is pretty slow for some reason. It
+% can be done much quicker via command line.
 tic
-build_db_table(dbfile, 'run_sched', readtable(rs_file));
+build_db_table(dbfile, 'run_sched', rs_file);
 toc
 tic
-build_db_table(dbfile, 'test_points', readtable(tp_file));
+build_db_table(dbfile, 'test_points', tp_file);
 toc
 %%
 run_vars = fieldnames(sqlite3(dbfile, 'SELECT * from run_sched LIMIT 1'));
