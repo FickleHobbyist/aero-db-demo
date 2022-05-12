@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>100</x>
+      <y>300</y>
+      <w>290</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>WindTunnelFacility
+--
+ID
+Name
+Location
+CostPerHour
+SectionWidth
+SectionHeight
+MinQ
+MaxQ
+MinRe
+MaxRe
+GA_Tests
+--
+Responsibilities
+-- Contains data about a wind tunnel facility</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>300</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>TestEvent
+--
+ID
+Name
+AircraftModel
+Purpose
+SweepSchedules
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>300</y>
+      <w>380</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Run
+--
+ID
+TestID
+RunNumber
+ConfigurationID
+QPSF
+RePerFt
+Alpha
+Beta
+Mach
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>770</x>
+      <y>330</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+Runs
+m1=1..n</panel_attributes>
+    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>850</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>ModelComponent
+--
+ID
+AircraftID
+Symbol
+Description
+--
+Example
+-- Fuselage, Wing, Tail</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>550</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>AircraftModel
+--
+ID
+Name
+Controls
+
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>730</y>
+      <w>110</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+Components
+m1=1..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1410</x>
+      <y>300</y>
+      <w>170</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>TestPoint
+--
+ID
+RunNumber
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1280</x>
+      <y>330</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+TestPoints
+m1=1..n</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1030</x>
+      <y>600</y>
+      <w>170</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>TestPointSchedule
+--
+ID: INT
+Symbol: TEXT
+Variable: TEXT
+Values: NUMERIC[]
+--
+Responsibilities
+-- Stores 1-dimensional
+sweep schedules</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>500</y>
+      <w>160</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+SweepSchedule
+m1=1..1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;140.0;60.0;140.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>740</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Configurations
+--
+ID
+AircraftID
+Symbol
+Description
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>670</x>
+      <y>660</y>
+      <w>170</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+Configurations
+m1=1..n</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0;150.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>80</x>
+      <y>620</y>
+      <w>330</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=blue
+- May be able to use json column to specify control 
+names and deflection values.
+- Can use views created for each aircraft that refer
+to the model table and build a special view that 
+expands the json column in to new data columns</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>0</y>
+      <w>380</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>tbl_RunSchedule
+--
+ID: INT PRIMARY KEY
+TestID: INT NOT NULL
+RunNumber: INT NOT NULL
+ConfigurationID: INT REFERENCES Configurations(ID)
+QPSF: NUMERIC(6,2) NOT NULL
+RePerFt: INT NOT NULL
+Alpha: NUMERIC(4, 2) NULLABLE
+Beta: NUMERIC(4, 2) NULLABLE
+Mach: NUMERIC(5, 3) NULLABLE
+--
+- A run must have one and only one sweep schedule
+- </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1070</x>
+      <y>200</y>
+      <w>50</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>0</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>tbl_TestEvents
+--
+ID
+Name
+AircraftModel
+Purpose
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>480</y>
+      <w>300</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+SweepSchedules
+m1=1..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0;280.0;140.0</additional_attributes>
+  </element>
+</diagram>
