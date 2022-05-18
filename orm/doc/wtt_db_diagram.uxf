@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>10</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>100</x>
-      <y>300</y>
-      <w>290</w>
-      <h>260</h>
+      <x>648</x>
+      <y>1422</y>
+      <w>261</w>
+      <h>234</h>
     </coordinates>
-    <panel_attributes>WindTunnelFacility
+    <panel_attributes>&lt;&lt;Object&gt;&gt;
+WindTunnelFacility
 --
 ID
 Name
@@ -30,12 +31,13 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>570</x>
-      <y>300</y>
-      <w>210</w>
-      <h>190</h>
+      <x>1071</x>
+      <y>1422</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
-    <panel_attributes>TestEvent
+    <panel_attributes>&lt;&lt;Object&gt;&gt;
+TestEvent
 --
 ID
 Name
@@ -51,12 +53,13 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>910</x>
-      <y>300</y>
-      <w>380</w>
-      <h>210</h>
+      <x>1377</x>
+      <y>1422</y>
+      <w>342</w>
+      <h>189</h>
     </coordinates>
-    <panel_attributes>Run
+    <panel_attributes>&lt;&lt;Object&gt;&gt;
+Run
 --
 ID
 TestID
@@ -74,10 +77,10 @@ Mach
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
-      <y>330</y>
-      <w>160</w>
-      <h>50</h>
+      <x>1251</x>
+      <y>1449</y>
+      <w>144</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 Runs
@@ -87,10 +90,10 @@ m1=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>470</x>
-      <y>850</y>
-      <w>210</w>
-      <h>190</h>
+      <x>981</x>
+      <y>1917</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>ModelComponent
 --
@@ -106,10 +109,10 @@ Example
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>470</x>
-      <y>550</y>
-      <w>210</w>
-      <h>190</h>
+      <x>981</x>
+      <y>1647</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>AircraftModel
 --
@@ -126,10 +129,10 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>560</x>
-      <y>730</y>
-      <w>110</w>
-      <h>140</h>
+      <x>1062</x>
+      <y>1809</y>
+      <w>99</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 Components
@@ -139,12 +142,13 @@ m1=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1410</x>
-      <y>300</y>
-      <w>170</w>
-      <h>190</h>
+      <x>1827</x>
+      <y>1422</y>
+      <w>153</w>
+      <h>171</h>
     </coordinates>
-    <panel_attributes>TestPoint
+    <panel_attributes>&lt;&lt;Object&gt;&gt;
+TestPoint
 --
 ID
 RunNumber
@@ -157,10 +161,10 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1280</x>
-      <y>330</y>
-      <w>150</w>
-      <h>50</h>
+      <x>1710</x>
+      <y>1449</y>
+      <w>135</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 TestPoints
@@ -170,10 +174,10 @@ m1=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1030</x>
-      <y>600</y>
-      <w>170</w>
-      <h>190</h>
+      <x>1485</x>
+      <y>1692</y>
+      <w>153</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>TestPointSchedule
 --
@@ -190,10 +194,10 @@ sweep schedules</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1050</x>
-      <y>500</y>
-      <w>160</w>
-      <h>120</h>
+      <x>1503</x>
+      <y>1602</y>
+      <w>144</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 SweepSchedule
@@ -203,10 +207,10 @@ m1=1..1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>750</x>
-      <y>740</y>
-      <w>210</w>
-      <h>190</h>
+      <x>1233</x>
+      <y>1818</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>Configurations
 --
@@ -222,10 +226,10 @@ Description
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>670</x>
-      <y>660</y>
-      <w>170</w>
-      <h>100</h>
+      <x>1161</x>
+      <y>1746</y>
+      <w>153</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 Configurations
@@ -235,10 +239,10 @@ m1=1..n</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>80</x>
-      <y>620</y>
-      <w>330</w>
-      <h>270</h>
+      <x>630</x>
+      <y>1710</y>
+      <w>297</w>
+      <h>243</h>
     </coordinates>
     <panel_attributes>Note..
 bg=blue
@@ -252,70 +256,271 @@ expands the json column in to new data columns</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>910</x>
-      <y>0</y>
-      <w>380</w>
-      <h>210</h>
+      <x>1593</x>
+      <y>495</y>
+      <w>432</w>
+      <h>216</h>
     </coordinates>
-    <panel_attributes>tbl_RunSchedule
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+RunSchedule
 --
 ID: INT PRIMARY KEY
-TestID: INT NOT NULL
-RunNumber: INT NOT NULL
+CompanyTestID: INT NOT NULL REFERENCES TestEvents(CompanyID)
+RunNumber: INT UNIQUE NOT NULL
 ConfigurationID: INT REFERENCES Configurations(ID)
 QPSF: NUMERIC(6,2) NOT NULL
 RePerFt: INT NOT NULL
-Alpha: NUMERIC(4, 2) NULLABLE
-Beta: NUMERIC(4, 2) NULLABLE
-Mach: NUMERIC(5, 3) NULLABLE
+Alpha: NUMERIC(4, 2) NOT NULL
+Beta: NUMERIC(4, 2) NOT NULL
+Mach: NUMERIC(5, 3) NOT NULL
 --
+Notes:
 - A run must have one and only one sweep schedule
-- </panel_attributes>
+</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1070</x>
-      <y>200</y>
-      <w>50</w>
-      <h>120</h>
-    </coordinates>
-    <panel_attributes>lt=-
-m1=0..n</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>570</x>
-      <y>0</y>
-      <w>210</w>
-      <h>190</h>
+      <x>729</x>
+      <y>486</y>
+      <w>324</w>
+      <h>234</h>
     </coordinates>
-    <panel_attributes>tbl_TestEvents
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+TestEvents
 --
-ID
-Name
-AircraftModel
-Purpose
+CompanyID: INT PRIMARY KEY
+FacilityID: INT REFERENCES WindTunnelFacilities(ID)
+AircraftID: INT REFERENCES AircraftModel(ID)
+Name: TEXT
+Purpose: TEXT
 --
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes>
+Responsibilities:
+- Stores high level metadata about
+specific test events
+layer=1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>750</x>
-      <y>480</y>
-      <w>300</w>
-      <h>160</h>
+      <x>1233</x>
+      <y>1584</y>
+      <w>270</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 SweepSchedules
 m1=1..n</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;140.0;280.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>153</x>
+      <y>486</y>
+      <w>261</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+WindTunnelFacilities
+--
+ID: INT PRIMARY KEY
+Name: TEXT NOT NULL
+Location: TEXT NOT NULL
+CostPerHour: 
+CostDate: 
+SectionWidth
+SectionHeight
+MinQ
+MaxQ
+MinRe
+MaxRe
+--
+Responsibilities
+-- Contains data about a wind tunnel facility
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1080</x>
+      <y>441</y>
+      <w>963</w>
+      <h>567</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Schema&gt;&gt;
+TestEventCompanyID
+--
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1494</x>
+      <y>297</y>
+      <w>441</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=pink
+The precision of a numeric is the total count of significant digits in the whole
+number, that is, the number of digits to both sides of the decimal point. The 
+scale of a numeric is the count of decimal digits in the fractional part, to the 
+right of the decimal point. So the number 23.5141 has a precision of 6 and a 
+scale of 4. Integers can be considered to have a scale of zero.
+
+NUMERIC(precision, scale)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1296</x>
+      <y>261</y>
+      <w>189</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=pink
+A REFERENCES constraint is
+the same as a foreign key
+constraint.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>927</x>
+      <y>261</y>
+      <w>360</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Useful References:
+bg=pink
+
+https://www.simplilearn.com/tutorials/sql-tutorial/schema-in-sql
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>738</y>
+      <w>288</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+Configurations
+--
+ID: UUID
+AircraftID: INT REFERENCES AircraftModels(ID)
+Symbols: 
+Description:
+
+--
+Notes:
+- Each row indicates a unique combination
+of model components
+
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>162</x>
+      <y>747</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+AircraftModels
+--
+ID: INT PRIMARY KEY
+Name: TEXT
+Controls: JSON?
+Components: INT[] REFERENCES ModelComponents(ID)
+Configurations: UUID[] REFERENCES Configurations(ID)
+--
+Responsibilities
+-- Resp1
+*-- Resp2*
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>531</x>
+      <y>1323</y>
+      <w>1593</w>
+      <h>828</h>
+    </coordinates>
+    <panel_attributes>Object Model (Work In Progress)
+--
+bg=none</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>405</x>
+      <y>747</y>
+      <w>297</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+ModelComponents
+--
+ID: INT PRIMARY KEY
+AircraftID: INT REFERENCES AircraftModels(ID)
+Symbol: TEXT
+Description: TEXT
+--
+Example
+-- Fuselage, Wing, Tail
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1422</x>
+      <y>495</y>
+      <w>153</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+TestPointSchedule
+--
+ID: INT
+Symbol: TEXT
+Variable: TEXT
+Values: NUMERIC[]
+--
+Responsibilities
+-- Stores 1-dimensional
+sweep schedules
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>144</x>
+      <y>441</y>
+      <w>918</w>
+      <h>567</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Schema&gt;&gt;
+Main
+--
+bg=none</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
