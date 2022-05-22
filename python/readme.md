@@ -1,7 +1,7 @@
 ## First Time Setup
 1. Clone this repository to your local drive
 
-    ```>> git clone https://github.com/FickleHobbyist/RafflePicker.git [destination]```
+    ```>> git clone https://github.com/FickleHobbyist/aero-db-demo.git [destination]```
 
 ### Windows
 2. Open a command prompt **_as administrator_** and navigate to your `[destination]`
