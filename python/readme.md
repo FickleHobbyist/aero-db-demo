@@ -22,7 +22,15 @@
 
 # References
 1. [Django Tutorial](https://docs.djangoproject.com/en/4.0/intro/tutorial02/)
-    * Left off at [Creating models](https://docs.djangoproject.com/en/4.0/intro/tutorial02/#creating-models-1) 2022-05-21
+    * Left off at [Playing with the API](https://docs.djangoproject.com/en/4.0/ref/django-admin/) 2022-05-22
 1. [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 1. [Django ORM vs SQLAlchemy](https://ebs-integrator.com/blog/django-orm-vs-sql-alchemy/#:~:text=Differences%20%E2%80%93%20SQL%20Alchemy%20vs%20Django,with%20the%20overall%20model%20object.)
 1. [Generating requirements.txt](https://stackoverflow.com/questions/31684375/automatically-create-requirements-txt)
+
+
+# Notes
+* 3 steps to making model changes:
+    1. Make changes in models.py
+    1. Run ```python manage.py makemigrations``` to create migrations for the changes
+    1. Run ```python manage.py migrate``` to apply changes
+* [django admin docs](https://docs.djangoproject.com/en/4.0/ref/django-admin/) cover full capabilities of `manage.py` for administrative tasks
